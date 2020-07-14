@@ -18,6 +18,12 @@ body {
 	line-height: 1.4;
 }
 
+p {
+	margin: 6px 0;
+	padding: 0;
+	/* margin-bottom: 12px; */
+}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -103,16 +109,21 @@ img {
 	background: var(--primary);
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
+	justify-content: end;
 	align-items: center;
 	text-align: center;
 	box-shadow: var(--shadow);
 	border-radius: var(--corners);
-	padding: 1.5rem;
+	padding: 1rem;
 }
 
 .top-box .timedate {
 	font-size: clamp(1.2rem, 1.6rem, 3vw);
+}
+
+.top-box-item-list {
+	list-style: disc;
+	text-align: left;
 }
 
 .top-box-a {
