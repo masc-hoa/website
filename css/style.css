@@ -130,6 +130,10 @@ img {
 	padding: 4px 0;
 }
 
+.top-box-item-list > li > strong {
+	display: block;
+}
+
 .top-box-a {
 	grid-area: top-box-a;
 }
