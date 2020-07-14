@@ -18,10 +18,11 @@ body {
 	line-height: 1.4;
 }
 
+h1,
+h4,
 p {
 	margin: 6px 0;
 	padding: 0;
-	/* margin-bottom: 12px; */
 }
 
 ul {
@@ -32,7 +33,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: blue;
+	color: rgb(37, 168, 113);
 }
 
 .btn {
@@ -109,7 +110,7 @@ img {
 	background: var(--primary);
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: start;
 	align-items: center;
 	text-align: center;
 	box-shadow: var(--shadow);
@@ -122,8 +123,11 @@ img {
 }
 
 .top-box-item-list {
-	list-style: disc;
 	text-align: left;
+}
+
+.top-box-item-list > li {
+	padding: 4px 0;
 }
 
 .top-box-a {
