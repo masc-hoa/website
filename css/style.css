@@ -101,17 +101,18 @@ img {
 
 .top-box {
 	background: var(--primary);
-	display: grid;
-	align-items: start;
-	justify-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	text-align: center;
 	box-shadow: var(--shadow);
 	border-radius: var(--corners);
 	padding: 1.5rem;
 }
 
 .top-box .timedate {
-	font-size: 2rem;
-	text-align: center;
+	font-size: clamp(1.2rem, 1.6rem, 3vw);
 }
 
 .top-box-a {
