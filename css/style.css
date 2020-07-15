@@ -48,6 +48,10 @@ img {
 	max-width: 100%;
 }
 
+.obe { 
+	text-decoration: line-through;
+}
+
 .wrapper {
 	display: grid;
 	grid-gap: 20px;
