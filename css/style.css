@@ -36,14 +36,6 @@ a {
 	color: rgb(37, 168, 113);
 }
 
-.btn {
-	background-color: var(--dark);
-	color: var(--light);
-	padding: 0.6rem 1.3rem;
-	text-decoration: none;
-	border: 0;
-}
-
 img {
 	max-width: 100%;
 }
@@ -135,7 +127,7 @@ img {
 	padding: 4px 0;
 }
 
-.top-box-item-list > li > strong {
+.top-box-item-list > li > span {
 	display: block;
 }
 
