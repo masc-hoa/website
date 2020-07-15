@@ -1,9 +1,9 @@
 :root {
-	--primary: #ddd;
+	--primary: #eee;
 	--dark: #333;
 	--light: #fff;
 	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-	--corners: 4px;
+	--corners: 3px;
 }
 
 html {
@@ -48,8 +48,9 @@ img {
 	max-width: 100%;
 }
 
-.obe { 
+.obe {
 	text-decoration: line-through;
+	opacity: 0.6;
 }
 
 .wrapper {
