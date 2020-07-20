@@ -80,7 +80,8 @@ img {
 	grid-gap: 20px;
 	grid-template-areas:
 		"showcase showcase top-box-a"
-		"showcase showcase top-box-b";
+		"showcase showcase top-box-b"
+		"showcase showcase top-box-c";
 }
 
 .showcase {
@@ -137,6 +138,10 @@ img {
 
 .top-box-b {
 	grid-area: top-box-b;
+}
+
+.top-box-c {
+	grid-area: top-box-c;
 }
 
 .boxes {
