@@ -169,8 +169,8 @@ footer {
 @media (max-width: 700px) {
 	.top-container {
 		grid-template-areas:
-			"top-box-a top-box-b"
-			"showcase showcase";
+			"top-box-a top-box-b top-box-c"
+			"showcase showcase showcase";
 	}
 
 	.showcase h1 {
@@ -191,7 +191,8 @@ footer {
 		grid-template-areas:
 			"showcase"
 			"top-box-a"
-			"top-box-b";
+			"top-box-b"
+			"top-box-c";
 	}
 
 	.boxes {
