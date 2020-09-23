@@ -33,7 +33,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgb(37, 168, 113);
+  color: rgb(37, 78, 168);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 img {
@@ -162,11 +166,17 @@ img {
 }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
   background: var(--dark);
   color: var(--light);
-  text-align: center;
-  padding: 0rem;
+}
+
+footer > p > a {
+  color: rgb(124, 148, 199);
+  font-weight: 600;
 }
 
 @media (max-width: 700px) {
