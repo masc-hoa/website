@@ -37,20 +37,26 @@
         display: grid;
         grid-template-columns: minmax(auto, 600px);
         grid-template-rows: auto 1fr;
+        background: #f4f4f4;
       }
 
       header {
+        position: sticky;
+        top: 0;
+        left: 0;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: hsl(222, 10%, 19%) 1px dotted;
-        background: #e4e4e4;
+        border-bottom: hsl(222, 10%, 19%) 0.5px dotted;
+        background: hsl(0, 0%, 100%, 0.9);
       }
 
       h1 {
         padding: 8px 12px;
         font-size: 1.6rem;
         font-weight: 400;
+        color: hsl(152, 44%, 39%);
       }
 
       header > a {
@@ -63,7 +69,6 @@
 
       main {
         padding: 16px;
-        background: #f4f4f4;
       }
 
       main > details {
