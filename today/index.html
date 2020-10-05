@@ -5,35 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Today at Midtown</title>
     <style>
+      /* Global */
       * {
         margin: 0;
         padding: 0;
       }
 
       body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 24px;
+        font-size: 16px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background: hsl(222, 10%, 19%);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         color: #333;
+        display: flex;
+        justify-content: center;
+        background-color: hsl(212, 43%, 15%);
       }
 
-      header,
-      main {
-        width: minmax(600px, 98vw);
-        padding: 16px;
+      /* Links */
+      a {
+        text-decoration: none;
+      }
+
+      #updateLink {
+        display: none;
+      }
+
+      /* Other Tags */
+
+      div {
+        display: grid;
+        grid-template-columns: minmax(auto, 600px);
+        grid-template-rows: auto 1fr;
       }
 
       header {
-        border-radius: 3px 3px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         border-bottom: hsl(222, 10%, 19%) 1px dotted;
         background: #e4e4e4;
       }
 
+      h1 {
+        padding: 8px 12px;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      header > a {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 12px;
+        text-decoration: none;
+        color: slateblue;
+      }
+
       main {
-        border-radius: 0 0 3px 3px;
+        padding: 16px;
         background: #f4f4f4;
       }
 
@@ -41,39 +70,74 @@
         margin-bottom: 32px;
       }
 
-      details > summary {
-        margin: 16px 1em 32px 2em;
+      summary {
+        margin: 16px 1em 0 0;
+        font-weight: 600;
+        color: hsl(266, 8%, 18%);
+        font-size: 1rem;
       }
 
-      details > :is(p, dl) {
-        margin: 16px 1em 32px 3em;
+      dl {
+        margin: 0 1em 8px 2em;
+      }
+
+      dt {
+        margin-top: 16px;
+        margin-bottom: 8px;
+        font-weight: 600;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Today at Midtown</h1>
-    </header>
-    <main>
-      <details>
-        <summary>Today's Food Truck</summary>
-        <p>DC Slices - <a href="https://www.goodfynd.com/">Order</a></p>
-      </details>
+    <div>
+      <header>
+        <h1>Today at Midtown</h1>
+        <a href="" id="updateLink">Update</a>
+      </header>
+      <main>
+        <details open>
+          <summary>Today's Food Truck</summary>
+          <dl>
+            <dt>
+              DC Slices -
+              <a href="https://www.goodfynd.com/">Order</a>
+            </dt>
+          </dl>
+        </details>
 
-      <details>
-        <summary>Upcoming Meetings</summary>
-        <dl>
-          <dt>Facilities and Grounds</dt>
-          <dd>Next Monday</dd>
-          <dt>October Board Meeting</dt>
-          <dd>Next Tuesday - <a href="#">Agenda</a> | Join</dd>
-        </dl>
-      </details>
+        <details open>
+          <summary>Upcoming Meetings</summary>
+          <dl>
+            <dt>Facilities and Grounds</dt>
+            <dd>Next Monday</dd>
+          </dl>
+          <dl>
+            <dt>October Board Meeting</dt>
+            <dd>Tuesday, October 13, 2020 @ 7:00PM</dd>
+            <dd>
+              <a href="#">Agenda</a> |
+              <a href="https://global.gotomeeting.com/join/803005245"
+                >Join Online</a
+              >
+              |
+              <a href="tel:+16467493122pp803005245#">Call</a>
+            </dd>
+          </dl>
+        </details>
 
-      <details>
-        <summary>Building Projects</summary>
-        <h1></h1>
-      </details>
-    </main>
+        <details>
+          <summary>Building Projects</summary>
+          <dl>
+            <dt>Pool</dt>
+            <dd></dd>
+          </dl>
+          <dl>
+            <dt>Plumbing Jetting</dt>
+            <dd></dd>
+          </dl>
+          <h1></h1>
+        </details>
+      </main>
+    </div>
   </body>
 </html>
