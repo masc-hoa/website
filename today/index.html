@@ -19,7 +19,7 @@
         color: #333;
         display: flex;
         justify-content: center;
-        background-color: hsl(212, 43%, 15%);
+        background-color: hsl(207, 25%, 81%);
       }
 
       /* Links */
@@ -33,11 +33,12 @@
 
       /* Other Tags */
 
-      div {
+      #page {
         display: grid;
-        grid-template-columns: minmax(auto, 600px);
+        grid-template-columns: minmax(auto, 700px);
         grid-template-rows: auto 1fr;
         background: #f4f4f4;
+        box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
       }
 
       header {
@@ -67,36 +68,42 @@
         color: slateblue;
       }
 
-      main {
-        padding: 16px;
-      }
-
       main > details {
-        margin-bottom: 32px;
+        margin: 8px 0 24px 0;
+        padding: 0 16px;
       }
 
       summary {
-        margin: 16px 1em 0 0;
         font-weight: 600;
-        color: hsl(266, 8%, 18%);
+        color: hsl(270, 7%, 18%);
         font-size: 1rem;
       }
 
       dl {
-        margin: 0 1em 8px 2em;
+        padding-left: 2rem;
       }
 
       dt {
-        margin-top: 16px;
-        margin-bottom: 8px;
         font-weight: 600;
+        margin-top: 8px;
+      }
+
+      dd {
+        margin-bottom: 24px;
+        line-height: 1.6;
+      }
+
+      div.date {
+        padding: 4px 0;
+        font-weight: 500;
+        font-size: 0.8rem;
       }
     </style>
   </head>
   <body>
-    <div>
+    <div id="page">
       <header>
-        <h1>Today at Midtown</h1>
+        <h1>Midtown Today</h1>
         <a href="" id="updateLink">Update</a>
       </header>
       <main>
@@ -104,22 +111,53 @@
           <summary>Today's Food Truck</summary>
           <dl>
             <dt>
+              <div class="date">10/5/2020</div>
               DC Slices -
               <a href="https://www.goodfynd.com/">Order</a>
             </dt>
           </dl>
         </details>
 
-        <details open>
+        <details>
+          <summary>Building Projects</summary>
+          <dl>
+            <dt>
+              <div class="date">10/6/2020 - 10/7/2020</div>
+              Carpet Cleaning
+            </dt>
+            <dd>
+              The common area hallway carpeting is scheduled for cleaning 10/6 -
+              10/7.
+            </dd>
+          </dl>
+          <dl>
+            <dt>Pool</dt>
+            <dd></dd>
+          </dl>
+          <dl>
+            <dt>Jetting Project</dt>
+            <dd></dd>
+          </dl>
+        </details>
+
+        <details>
           <summary>Upcoming Meetings</summary>
           <dl>
             <dt>Facilities and Grounds</dt>
-            <dd>Next Monday</dd>
+            <dd>
+              Monday, October 12, 2020 @ 7:00PM<br />
+              <a href="https://global.gotomeeting.com/join/330049373"
+                >Join Online</a
+              >
+              |
+              <a href="tel:+18722403412pp330049373#">Call</a>
+            </dd>
           </dl>
+
           <dl>
             <dt>October Board Meeting</dt>
-            <dd>Tuesday, October 13, 2020 @ 7:00PM</dd>
             <dd>
+              Tuesday, October 13, 2020 @ 7:00PM<br />
               <a href="#">Agenda</a> |
               <a href="https://global.gotomeeting.com/join/803005245"
                 >Join Online</a
@@ -128,19 +166,6 @@
               <a href="tel:+16467493122pp803005245#">Call</a>
             </dd>
           </dl>
-        </details>
-
-        <details>
-          <summary>Building Projects</summary>
-          <dl>
-            <dt>Pool</dt>
-            <dd></dd>
-          </dl>
-          <dl>
-            <dt>Plumbing Jetting</dt>
-            <dd></dd>
-          </dl>
-          <h1></h1>
         </details>
       </main>
     </div>
