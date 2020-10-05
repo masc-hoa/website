@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today at Midtown</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: hsl(222, 10%, 19%);
+        color: #333;
+      }
+
+      header,
+      main {
+        width: 600px;
+        padding: 16px;
+      }
+
+      header {
+        margin-top: 32px;
+        border-radius: 3px 3px 0 0;
+        border-bottom: hsl(222, 10%, 19%) 1px dotted;
+        background: #e4e4e4;
+      }
+
+      main {
+        border-radius: 0 0 3px 3px;
+        background: #f4f4f4;
+      }
+
+      main > details {
+        margin-bottom: 32px;
+      }
+
+      details > summary {
+        margin: 16px 1em 32px 2em;
+      }
+
+      details > :is(p, dl) {
+        margin: 16px 1em 32px 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Today at Midtown</h1>
+    </header>
+    <main>
+      <details>
+        <summary>Today's Food Truck</summary>
+        <p>DC Slices - <a href="https://www.goodfynd.com/">Order</a></p>
+      </details>
+
+      <details>
+        <summary>Upcoming Meetings</summary>
+        <dl>
+          <dt>Facilities and Grounds</dt>
+          <dd>Next Monday</dd>
+          <dt>October Board Meeting</dt>
+          <dd>Next Tuesday - <a href="#">Agenda</a> | Join</dd>
+        </dl>
+      </details>
+
+      <details>
+        <summary>Building Projects</summary>
+        <h1></h1>
+      </details>
+    </main>
+  </body>
+</html>
