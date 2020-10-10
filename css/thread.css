@@ -17,6 +17,11 @@ body {
 /* Links */
 a {
   text-decoration: none;
+  color: steelblue;
+}
+
+header a {
+  padding-left: 1em;
 }
 
 #updateLink {
@@ -43,10 +48,11 @@ header {
   align-items: center;
   border-bottom: hsl(222, 10%, 19%) 0.5px dotted;
   background: hsl(0, 0%, 100%, 0.9);
+  color: hsl(270, 100%, 33%);
+  padding: 8px 12px;
 }
 
 h1 {
-  padding: 8px 12px;
   font-size: 1.6rem;
   font-weight: 400;
   color: hsl(270, 100%, 33%);
@@ -57,7 +63,7 @@ header > a {
   font-weight: 600;
   padding: 12px;
   text-decoration: none;
-  color: slateblue;
+  color: hsl(270, 100%, 33%);
 }
 
 main > details {

@@ -1,0 +1,66 @@
+[
+  {
+    "time": "6:15pm",
+    "event": "Executive Session",
+    "breakdown": ["Residential Account Discussion"]
+  },
+  {
+    "time": "6:55pm",
+    "event": "Adjourn Executive Session",
+    "breakdown": []
+  },
+  {
+    "time": "7:00pm",
+    "event": "Call To Order Open Session",
+    "breakdown": []
+  },
+  {
+    "time": "7:01pm",
+    "event": "Approval Of Minutes",
+    "breakdown": ["September 15, 2020"]
+  },
+  {
+    "time": "7:02pm",
+    "event": "Resident Forum",
+    "breakdown": []
+  },
+  {
+    "time": "7:20pm",
+    "event": "Committee Reports ",
+    "breakdown": [
+      "Social",
+      "Facilities & Grounds",
+      "Budget",
+      "Rules & Covenants"
+    ]
+  },
+  {
+    "time": "7:30pm",
+    "event": "Management Report",
+    "breakdown": ["Operational Calendar/Maintenance List"]
+  },
+  {
+    "time": "7:35pm",
+    "event": "New Business",
+    "breakdown": ["Datawatch Proposal For Fob Access From Loading Dock"]
+  },
+  {
+    "time": "7:45pm",
+    "event": "Old Business",
+    "breakdown": [
+      "Approve 2021 Budget (Discussion/Vote)",
+      "Committee Charters (Discussion/Change # Of Members)",
+      "Tdl Garage Report"
+    ]
+  },
+  {
+    "time": "7:50pm",
+    "event": "Next Meeting Virtual Annual Meeting November 10, 2020",
+    "breakdown": []
+  },
+  {
+    "time": "7:55pm",
+    "event": "Adjournment",
+    "breakdown": []
+  }
+]

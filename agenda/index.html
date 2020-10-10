@@ -1,13 +1,83 @@
 <html>
   <head>
-    <meta
+    <!-- <meta
       http-equiv="Refresh"
       content="0; URL=https://github.com/masc-hoa/meetings/raw/master/2020/board/202009-board-agenda.pdf"
-    />
+    /> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="/css/thread.css" />
+    <style>
+      table {
+        border-spacing: 8px 12px;
+        display: inline-table;
+        margin: 0 auto;
+      }
+
+      tr.entry {
+        font-weight: 600;
+      }
+
+      ol {
+        list-style-type: upper-alpha;
+        list-style-position: inside;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 8px;
+      }
+
+      li:last-child {
+        padding-bottom: 12px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="page">
+      <header>
+        <h1>Midtown Today</h1>
+        <div>
+          <a href="/today/">Home</a>
+          <a
+            href="https://github.com/masc-hoa/meetings/raw/master/2020/board/202010-board-agenda.pdf"
+            >PDF</a
+          >
+        </div>
+      </header>
+      <table id="agenda"></table>
+    </div>
+  </body>
+  <script>
+    window.onload = () => {
+      fetch("./agenda.json")
+        .then(response => response.json())
+        .then(data => buildAgenda(data));
+    };
+
+    const buildAgenda = entries => {
+      const items = entries
+        .map(
+          entry =>
+            `<tr class="entry"><td>${entry.time}</td><td>${
+              entry.event
+            }</td></tr>${
+              entry.breakdown.length > 0 ? buildBreakdown(entry.breakdown) : ""
+            }`
+        )
+        .join("");
+      document.getElementById("agenda").innerHTML = items;
+    };
+
+    const buildBreakdown = breakdown =>
+      `<tr><td></td><td><ol>${breakdown
+        .map(item => `<li>${item}</li>`)
+        .join("")}</ol></td></tr>`;
+  </script>
 </html>
