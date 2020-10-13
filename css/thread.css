@@ -52,7 +52,7 @@ header {
 
 header > div,
 main {
-  width: clamp(300px, 50vw, 800px);
+  width: clamp(300px, 100vw, 40rem);
   margin-left: auto;
   margin-right: auto;
   padding: 12px;
@@ -73,17 +73,16 @@ h1 {
   color: hsl(270, 100%, 33%);
 }
 
-header > a {
+header a {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 12px;
   padding-left: 1rem;
   text-decoration: none;
-  color: hsl(270, 100%, 33%);
 }
 
 main {
-  background: #fff;
+  /* background: #fff; */
   border-bottom: hsl(222, 10%, 19%) 1px dotted;
 }
 
