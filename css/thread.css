@@ -52,7 +52,7 @@ header {
 
 header > div,
 main {
-  width: clamp(300px, 50vw, 600px);
+  width: clamp(300px, 50vw, 800px);
   margin-left: auto;
   margin-right: auto;
   padding: 12px;
@@ -61,7 +61,6 @@ main {
 header > div {
   display: flex;
   align-items: center;
-  gap: 1em;
 }
 
 header > div a:first-of-type {
@@ -78,6 +77,7 @@ header > a {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 12px;
+  padding-left: 1rem;
   text-decoration: none;
   color: hsl(270, 100%, 33%);
 }
